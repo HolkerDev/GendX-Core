@@ -19,6 +19,6 @@ def crop(image_path):
         nr = int(r * 2)
         count += 1
         face_img = image[ny:ny + nr, nx:nx + nr]
-        cv2.imwrite('image' + str(count) + '.png', face_img)
+        cv2.imwrite('image' + str(count) + '.jpg', face_img)
         faces_arr.append(face_img)
     return faces_arr
